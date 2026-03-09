@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>IOPN Testnet Wallet Checker</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.min.js"></script>
+
+</head>
+
+<body>
+
+<h1>IOPN Testnet Wallet Checker</h1>
+
+<p>Analyze wallet activity on IOPN testnet</p>
+
+<input id="wallet" placeholder="Enter wallet address">
+
+<button onclick="scanWallet()">Scan Wallet</button>
+
+<div class="card">
+<h2>Native Balance</h2>
+<div id="balance">-</div>
+</div>
+
+<div class="card">
+<h2>Transactions</h2>
+<div id="txcount">-</div>
+</div>
+
+<div class="card">
+<h2>Token Holdings</h2>
+<div id="tokens">-</div>
+</div>
+
+<div class="card">
+<h2>NFT Minted</h2>
+<div id="nfts">-</div>
+</div>
+
+<div class="card score">
+<h2>Activity Score</h2>
+<div id="score">-</div>
+</div>
+
+<script src="config.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
