@@ -7,15 +7,19 @@ const ERC20_ABI=[
 "function decimals() view returns (uint8)"
 ]
 
-async function scanWallet(){
+async function scanWallet() {
 
-let wallet=document.getElementById("wallet").value
+const wallet = document.getElementById("walletInput").value;
 
 if(!wallet){
+alert("Enter wallet address");
+return;
+}
 
-alert("Enter wallet")
+const balance = await provider.getBalance(wallet);
 
-return
+document.getElementById("nativeBalance").innerText =
+ethers.utils.formatEther(balance) + " IOPN";
 
 }
 
