@@ -1,3 +1,7 @@
+const RPC = "https://testnet-rpc.iopn.tech";
+
+const provider = new ethers.providers.JsonRpcProvider(RPC);
+
 const ERC20_ABI=[
 "function balanceOf(address owner) view returns (uint256)",
 "function decimals() view returns (uint8)"
