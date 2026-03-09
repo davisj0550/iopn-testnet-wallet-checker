@@ -122,3 +122,10 @@ let score=tx*2 + nft*5 + tokens*3
 document.getElementById("score").innerHTML=score
 
 }
+const TOKENS = [
+{
+name: "USDT",
+address: "0x0000000000000000000000000000000000000000",
+decimals: 18
+}
+]
